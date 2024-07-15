@@ -10,19 +10,39 @@
   <body>
     <div class="container flex bg-black">
       <div class="left">
+        <div class="close">
+          <img src="./Svg/close.svg" alt="">
+        </div>
         <div class="home bg-grey rounded m-2 p-1">
           <div class="logo">
-            <img class="invert" src="logo.svg" alt="Spotify Logo" />
+            <img class="invert" src="./Svg/logo.svg" alt="Spotify Logo" />
           </div>
           <ul>
-            <li><img class="invert" src="home.svg" alt="Home" /> Home</li>
-            <li><img class="invert" src="search.svg" alt="Search" />Search</li>
+            <li><img class="invert" src="./Svg/home.svg" alt="Home" /> Home</li>
+            <li><img class="invert" src="./Svg/search.svg" alt="Search" />Search</li>
           </ul>
         </div>
         <div class="library bg-grey rounded m-2 p-1">
           <div class="heading">
-            <img class="invert" src="playlist.svg" alt="Playlist" />
+            <img class="invert" src="./Svg/playlist.svg" alt="Playlist" />
             <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul>
+              <!-- <li>
+                <img class="invert" src="music.svg" alt="">
+                <div class="info">
+                  <div>Songname</div>
+                  <div>Songartist</div>
+                </div>
+                <div class="playnow">
+                  <span>Play Now</span>
+                  <img src="play.svg" alt="">
+                </div>
+                
+              </li> -->
+              
+            </ul>
           </div>
           <div class="footer">
             <div>
@@ -59,11 +79,14 @@
         </div>
       </div>
 
-      <div class="right bg-grey">
+      <div class="right bg-black">
         <div class="header">
           <div class="nav">
-            <img class="invert" src="left.svg" alt="Previous">
-            <img class="invert" src="right.svg" alt="Next">
+            <div class="hamburgerCont">
+            <img class="hamburger invert" src="./Svg/ham.svg" alt="">
+            <img class="invert" src="./Svg/left.svg" alt="Previous">
+            <img class="invert" src="./Svg/right.svg" alt="Next">
+          </div>
           </div>
           <div class="buttons">
             <button class="signup">Signup</button>
@@ -72,36 +95,40 @@
         </div>
         <div class="spotifyPlaylist">
             <h1>Spotify Playlist</h1>
-            <div class="cardContainer">
+            <div class="cardContainer bg-grey">
                <div class="card">
-                    <img src="	https://i.scdn.co/image/ab67706f00000002325a73f69fa4fef821080f25
+                    <img src="https://i.scdn.co/image/ab67706f00000002325a73f69fa4fef821080f25
                     " alt="">
                     <h2>Lofi Sleep</h2>
                     <p>a person is sleeping listening</p>
                </div>
-               <div class="card">
-                    <img src="	https://i.scdn.co/image/ab67706f00000002325a73f69fa4fef821080f25
-                    " alt="">
-                    <h2>Lofi Sleep</h2>
-                    <p>a person is sleeping listening</p>
-               </div>
-               <div class="card">
-                    <img src="	https://i.scdn.co/image/ab67706f00000002325a73f69fa4fef821080f25
-                    " alt="">
-                    <h2>Lofi Sleep</h2>
-                    <p>a person is sleeping listening</p>
-               </div>
-               <div class="card">
-                    <img src="play.svg" alt="">
-                    <img src="	https://i.scdn.co/image/ab67706f00000002325a73f69fa4fef821080f25
-                    " alt="">
-                    <h2>Lofi Sleep</h2>
-                    <p>a person is sleeping listening</p>
-               </div>
+              
 
             </div>
+
+            <div class="playbar">
+              <div class="seekbar">
+                <div class="circle">
+                </div>
+              </div>
+              <div class="abovebar">
+                
+                  <div class="songinfo"></div>
+
+                  <div class="songbuttons">
+                    <img id="previous" src="./Svg/prevSong.svg" alt="">
+                    <img id="play" src="./Svg/play.svg" alt="">
+                    <img id="next" src="./Svg/nextSong.svg" alt="">
+                  </div>
+
+                  <div class="songtime"></div>
+
+              </div>
+           </div>
+
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
