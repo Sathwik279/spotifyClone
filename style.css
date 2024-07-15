@@ -12,11 +12,10 @@
     padding:10px;
 }
 .right{
-    width:75vw
+    width:75vw;
+    margin:16px 0px;
 }
-.home{
-    
-}
+
 
 .home ul li{
     display:flex;
@@ -41,4 +40,53 @@
 }
 .heading img{
     width:30px;
+}
+.footer{
+    display:flex;
+    font-size:10px;
+    color:grey;
+    gap:13px;
+    position:absolute;
+    bottom:0;
+}
+.library{
+    min-height:80vh;
+    position:relative;
+}
+.footer a{
+    color:grey;
+    font-size:7px;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    background-color: rgb(39, 32, 32);
+    
+}
+.header *{
+    padding:4px;
+    
+}
+.spotifyPlaylist{
+    padding:16px;
+}
+.card{
+    width:250px;
+    padding:10px;
+    border-radius: 10px;
+    background-color:grey;
+}
+
+.card img{
+    width:100%;
+    object-fit:contain;
+}
+.card > *{
+    padding-top:10px;
+}
+.cardContainer{
+    margin:30px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
 }
